@@ -111,8 +111,8 @@ p  <- p + labs(x="Year", y="Net weight (lb)", fill="Age", linetype="Age", shape=
 #p  <- p + scale_x_discrete(breaks=pretty(saaf$year))
 p  <- p + theme(axis.text.x = element_text(size = rel(0.8)))
 p  <- p + facet_wrap(~RegArea) + theme_bw(12)
-ggsave(p, file="../../FIGS/fig:SAA_age6_14.pdf")
-ggsave(p, file="../../FIGS/fig:SAA_age6_14.png")
+ggsave(p, file="fig:SAA_age6_14.pdf")
+ggsave(p, file="fig:SAA_age6_14.png")
 
 
 wraper<- function()
@@ -171,3 +171,4 @@ write.table(dt, file="BBSRFage.dat", append=TRUE, quote=FALSE, row.names=FALSE, 
 
 
 }
+browser()
